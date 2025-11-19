@@ -22,7 +22,7 @@ header {
     padding: 30px 20px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border: 2px solid rgba(255, 140, 0, 0.3);
 }
 
@@ -106,9 +106,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 5px;
 }
 
 .progress-bar {
@@ -136,6 +136,24 @@ header {
     border: 2px solid #ff8c00;
 }
 
+.timer.warning {
+    animation: pulse 0.5s infinite;
+    color: #ff3535;
+    border-color: #ff3535;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
 .question-container {
     margin-bottom: 30px;
 }
@@ -148,7 +166,7 @@ header {
 
 .question-text {
     font-size: 1.3em;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     line-height: 1.6;
 }
 
@@ -317,15 +335,15 @@ header {
 
 @media (max-width: 450px) {
     body {
-        padding: 10px;
+        padding: 15px;
     }
 
     header {
-        padding: 20px 15px;
+        padding: 10px 5px;
     }
 
     .logo {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     .tagline {
@@ -352,7 +370,7 @@ header {
     }
 
     .option {
-        padding: 15px;
+        padding: 10px;
     }
 
     .btn {
@@ -368,5 +386,9 @@ header {
 
     .stats-grid {
         grid-template-columns: 1fr;
+    }
+    .home-screen h1 {
+        font-size: 1.5em;
+        padding-bottom: 10px;
     }
 }

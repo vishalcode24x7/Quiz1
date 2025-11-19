@@ -378,6 +378,10 @@ function startTimer() {
         timeLeft--;
         updateTimerDisplay();
 
+        if (timeLeft <= 3) {
+            document.getElementById('timer').classList.add('warning');
+        }
+
         if (timeLeft <= 0) {
             clearInterval(timer);
             showCorrectAnswer();
